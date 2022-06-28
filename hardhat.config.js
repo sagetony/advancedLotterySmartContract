@@ -36,4 +36,7 @@ module.exports = {
         outputFile: "gas-file.txt",
         enabled: false,
     },
+    mocha: {
+        timeout: 200000,
+    },
 }
