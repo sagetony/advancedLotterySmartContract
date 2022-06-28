@@ -10,6 +10,7 @@ require("dotenv").config()
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
+    solidity: "0.8.7",
     defaultNetwork: "hardhat",
     networks: {
         rinkeby: {
@@ -28,5 +29,11 @@ module.exports = {
             players: 1,
         },
     },
-    solidity: "0.8.7",
+    gasReporter: {
+        currency: "USD",
+        coinmarketcap: process.env.COINMARKETCAP,
+        noColors: true,
+        outputFile: "gas-file.txt",
+        enabled: false,
+    },
 }
