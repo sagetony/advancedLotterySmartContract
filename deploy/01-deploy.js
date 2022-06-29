@@ -1,6 +1,6 @@
 const { network, ethers } = require("hardhat")
 const { developmentChains, networkConfig } = require("../helper-config")
-const verify = require("../utils/verify")
+const { verify } = require("../utils/verify")
 const FUND_AMOUNT = ethers.utils.parseEther("30")
 module.exports = async (hre) => {
     const { getNamedAccounts, deployments } = hre
