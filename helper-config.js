@@ -5,7 +5,7 @@ const networkConfig = {
         name: "rinkeby",
         ethUsdPriceFeed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
         vrfCoordinator: "0x6168499c0cFfCaCD319c818142124B7A15E857ab",
-        ethAmount: ethers.utils.parseEther("0.01"),
+        ethAmount: ethers.utils.parseEther("0.001"),
         keyHash: "0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc",
         subscriptionId: "7464",
         callbackGasLimit: "500000",
@@ -13,7 +13,7 @@ const networkConfig = {
     },
     31337: {
         name: "hardhat",
-        ethAmount: ethers.utils.parseEther("0.01"),
+        ethAmount: ethers.utils.parseEther("0.001"),
         keyHash: "0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc",
         callbackGasLimit: "500000",
         interval: "30",

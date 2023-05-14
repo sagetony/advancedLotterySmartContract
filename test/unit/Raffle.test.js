@@ -21,6 +21,8 @@ const { developmentChains, networkConfig } = require("../../helper-config")
                   assert.equal(lotteryState.toString(), "0")
                   assert.equal(lotteryInterval.toString(), networkConfig[chainId]["interval"])
                   assert.equal(lotteryEthAmount.toString(), "10000000000000000")
+
+                  //   console.log(lotteryEthAmount)
               })
           })
 
